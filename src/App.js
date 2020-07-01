@@ -5,7 +5,7 @@ import { addItem } from  './actions/items';
 
 class App extends Component {
 
-  handleOnClick() {
+  handleOnClick = event => {
     this.props.store.dispatch(addItem());
   }
 
